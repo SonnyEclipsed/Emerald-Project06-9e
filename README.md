@@ -33,17 +33,24 @@ Cloud-based programming interface
 
 The development environment is composed of five servers. The first one is run with the [Create React App](https://create-react-app.dev/docs/getting-started/) dev server. The later four are containerized with docker and run with [docker compose](https://docs.docker.com/compose/).
 
+// RAN VIA 'YARN' //1//
 * `casmm-client-dev` - localhost:3000
+* client folder
 
+// RAN VIA 'DOCKER' //4//
 * `casmm-server-dev` - localhost:1337/admin
+* server folder
 
-* `casmm-compile-dev` 
+* `casmm-compile-dev` // currently inoperable
+* compile folder
 
-* `casmm-db-dev` - localhost:5432
+* `casmm-db-dev` - localhost:5432 // currently inoperable
+* ?
 
   > The first time the db is started, the [init_db.sh](/scripts/init_db.sh) script will run and seed the database with an environment specific dump. Read about Postgres initialization scripts [here](https://github.com/docker-library/docs/blob/master/postgres/README.md#initialization-scripts). To see how to create this dump, look [here](https://github.com/DavidMagda/CaSMM_fork_2023/blob/develop/scripts/readme.md).
 
-* `casmm-compile_queue-dev`
+* `casmm-compile_queue-dev` // currently inoperable
+* ?
 
 #### Running
 
