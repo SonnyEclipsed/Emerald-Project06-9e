@@ -366,21 +366,25 @@ export default function CustomBlock({ activity, isSandbox, workspace}) {
             </Row>
             {/* Code to fix the workspace to half and provide space for the block def and gen code, will need to add a block preview */}
             <div id='newblockly-canvas'/>
-            <Row id='block-bs'>{saveBlock('Save Block')}</Row>
-            <Row id='pre-text'>Block Preview</Row>
+            <Row id='block-bs'>{saveBlock('Save Block')}</Row> 
+            
+            <Row id='pre-text'>Block Preview</Row> {/* prints Block Preview on the screen*/}
             <Row id='blocklyCanvasTop'>
-              {/* Block Preview */}
+              {/* Block Preview */} {/* Nothing yet*/}
             </Row>
+
             <Row id='def-text'>Block Definition</Row>
             <Row id='blocklyCanvasMid'>
               {/* {Block Definition} */}
-              {blockCode}
+              {blockCode} {/* Prints the block definition */}
             </Row>
+
             <Row id='gen-text'>Generator Stub</Row>
-            <Row id='blocklyCanvasBottom'>
+           <Row id='blocklyCanvasBottom'>
               {/* {Generator Stub} */}
-              {generatorCode}
+              {generatorCode} {/* Prints the generator code */}
             </Row>
+
           </Spin>
         </div>
         <ConsoleModal

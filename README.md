@@ -37,7 +37,7 @@ The development environment is composed of five servers. The first one is run wi
 * `casmm-client-dev` - localhost:3000
 * client folder
 
-// RAN VIA 'DOCKER' //4//
+// RAN VIA 'DOCKER' //4// `docker compose up`
 * `casmm-server-dev` - localhost:1337/admin
 * server folder
 
